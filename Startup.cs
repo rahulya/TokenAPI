@@ -41,7 +41,6 @@ namespace Token
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
 
             app.UseRouting();

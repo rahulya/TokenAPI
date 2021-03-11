@@ -14,12 +14,10 @@ namespace Token.Controllers
     public class UsersController : ControllerBase
     {
         private IUserService _userService;
-
         public UsersController(IUserService userService)
         {
             _userService = userService;
         }
-
         [HttpPost("authenticate")]
         public IActionResult Authenticate(AuthenticateRequest model)
         {
